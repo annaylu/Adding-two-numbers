@@ -31,7 +31,7 @@ public class SumController implements WebMvcConfigurer {
 	
 
 	@PostMapping("/")
-	public String checkPersonInfo(@Valid NumbersForm numbersForm, BindingResult bindingResult,HttpServletRequest request, HttpServletResponse response, ModelMap model) {
+	public String checkInputData(@Valid NumbersForm numbersForm, BindingResult bindingResult,HttpServletRequest request, HttpServletResponse response, ModelMap model) {
 
 		if (bindingResult.hasErrors()) {
 			return "form";
