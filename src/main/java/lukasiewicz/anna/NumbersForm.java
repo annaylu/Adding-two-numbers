@@ -6,11 +6,11 @@ import javax.validation.constraints.NotNull;
 public class NumbersForm {
 	
 	@NotNull
-	@Digits(integer=50,fraction=50)
+	@Digits(integer=309,fraction=1074)
 	private Double num1;
 	
 	@NotNull
-	@Digits(integer=50,fraction=50)
+	@Digits(integer=309,fraction=1074)
 	private Double num2;
 
 	public Double getNum1() {
