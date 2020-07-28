@@ -12,12 +12,12 @@
 		<table>
 			<tr>
 				<td>Enter first value:</td>
-				<td><input type="text" th:field="*{num1}" /></td>
+				<td><input type="text" th:field="*{num1}" maxlength="true"/></td>
 				<td th:if="${#fields.hasErrors('num1')}" th:errors="*{num1}">Num1 error
 			</tr>
 			<tr>
 				<td>Enter second value:</td>
-				<td><input type="text" th:field="*{num2}" /></td>
+				<td><input type="text" th:field="*{num2}" maxlength="true"/></td>
 				<td th:if="${#fields.hasErrors('num2')}" th:errors="*{num2}">Num2 error
 					Error</td>
 			</tr>
